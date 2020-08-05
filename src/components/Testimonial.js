@@ -16,49 +16,49 @@ const Testimonial = () => {
                     nav = {false}
                     items={1}
                 >
-                    <div class="item"><p>
+                    <div className="item"><p>
                         "Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque."
                         <br/>
                         <strong>john smith</strong>
                         </p>
                         
                         </div>
-                    <div class="item">
+                    <div className="item">
                         <p>
                         "Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque."
                         <br/>
                         <strong>Roger Spear</strong>
                         </p>
                     </div>
-                    <div class="item">
+                    <div className="item">
                         <p>
                         "Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque."
                         <br/>
                         <strong>Robert Algerio</strong>
                         </p>
                     </div>
-                    <div class="item">
+                    <div className="item">
                         <p>
                         "Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque."
                         <br/>
                         <strong>Keyli Mecdonald</strong>
                         </p>
                     </div>
-                    <div class="item">
+                    <div className="item">
                         <p>
                         "Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque."
                         <br/>
                         <strong>Angelo Aquista</strong>
                         </p>
                     </div>
-                    <div class="item">
+                    <div className="item">
                         <p>
                         "Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque."
                         <br/>
                         <strong>ABC Grandstand</strong>
                         </p>
                     </div>
-                    <div class="item">
+                    <div className="item">
                         <p>
                         "Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque."
                         <br/>
