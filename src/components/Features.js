@@ -1,8 +1,10 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import useWebAnimations, { fadeInUp } from "@wellyshen/use-web-animations";
 const Features = () => {
+    const {ref} = useWebAnimations({...fadeInUp})
     return (
-        <div className="features" id="features">
+        <div className="features" id="features" ref={ref}>
             <div className="feature-text">
                 <h1>Imagin Features</h1>
                 <p>
@@ -10,9 +12,9 @@ const Features = () => {
                 </p>
 
             </div>
-            <div className="keys">
+            <div className="keys" >
                 <Container>
-                    <Row className="text-center">
+                    <Row className="text-center" >
                         <Col md={4} className="column">
                             <div className="card">
                                 <div className="card-body">

@@ -209,7 +209,11 @@ p {
         padding: 1rem;
     }
 }
-
+@media(max-width:767px){
+    .hero {
+        height: 85vh;
+    }
+}
 @media (max-width: 575px){
     .feature-text {
         padding: 2rem 6rem 1rem;
@@ -229,7 +233,7 @@ p {
 }
 @media (max-width: 475px){
     .hero {
-        height: 77vh;
+        height: 55vh;
     }
     .btns {
         padding: .5rem 1.5rem;

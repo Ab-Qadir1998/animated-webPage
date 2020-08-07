@@ -1,12 +1,14 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import Btn from './Btn'
+import useWebAnimations, { fadeInLeft } from "@wellyshen/use-web-animations";
 
 const Home = () => {
+    const {ref} = useWebAnimations({...fadeInLeft});
     return (
         <div className="hero" id="#home">
             <Container>
-                <div className="hero-text">
+                <div className="hero-text" ref={ref}>
                     <h1>
                         Make Your Business <br /> More Profitable
                 </h1>
