@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import useWebAnimations, { fadeInUp } from "@wellyshen/use-web-animations";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
+
 const Features = () => {
-    const {ref} = useWebAnimations({...fadeInUp})
+    useEffect(()=> {
+        Aos.init({duration: 2000});
+    });
+    
     return (
-        <div className="features" id="features" ref={ref}>
-            <div className="feature-text">
+        <div className="features" id="features">
+            <div className="feature-text" data-aos="fade-up">
                 <h1>Imagin Features</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea  quo cupiditate facere deleniti fuga officia.
                 </p>
 
             </div>
-            <div className="keys" >
+            <div className="keys" data-aos="flip-up">
                 <Container>
                     <Row className="text-center" >
                         <Col md={4} className="column">

@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container } from 'react-bootstrap'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const Testimonial = () => {
+     useEffect(()=> {
+        Aos.init({duration: 1000});
+    });
     return (
-        <div className="testimonial">
+        <div className="testimonial" data-aos="fade-up">
             <Container>
                 <h1 className="text-center">Testimonials</h1>
                 <OwlCarousel mt={4}

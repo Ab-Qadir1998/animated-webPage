@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container } from 'react-bootstrap'
 import Btn from './Btn'
-import useWebAnimations, { fadeInLeft } from "@wellyshen/use-web-animations";
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const Home = () => {
-    const {ref} = useWebAnimations({...fadeInLeft});
+    useEffect(()=> {
+        Aos.init({duration: 2000});
+    });
+    
     return (
         <div className="hero" id="#home">
             <Container>
-                <div className="hero-text" ref={ref}>
+                <div className="hero-text" data-aos="fade-right">
                     <h1>
                         Make Your Business <br /> More Profitable
                 </h1>

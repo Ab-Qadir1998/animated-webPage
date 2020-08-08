@@ -1,18 +1,23 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Man from '../images/man.svg'
 import Btn from './Btn'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const About = () => {
+ useEffect(()=> {
+        Aos.init({duration: 1000});
+    });
     return (
         <div className="about">
             <Container>
                 <h1 className="text-center">About Us</h1>
                 <Row>
-                    <Col md={6}>
+                    <Col md={6} data-aos="fade-left">
                         <img src={Man} alt="man" className="fix-size" />
                     </Col>
 
-                    <Col md={6}>
+                    <Col md={6} data-aos="fade-right">
                        <div className="about-text">
                        <h4>Our Mission</h4>
                         <p>

@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container,Row,Col } from 'react-bootstrap'
 import Girl from '../images/girl.svg'
 import Boy from '../images/boy.svg'
-import useWebAnimations, { fadeInLeft,fadeInRight } from '@wellyshen/use-web-animations'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const Communicate = () => {
-    const {ref} = useWebAnimations({...fadeInLeft})
+     useEffect(()=> {
+        Aos.init({duration: 1000});
+    });
     return (
         <div className="communication">
             <Container>
                 <Row>
-                    <Col md={8} ref={ref}>
+                    <Col md={8} data-aos="fade-right">
                         <img src={Girl} alt="girl" className="fix-size"/>
                     </Col>
                     <Col md={4}>
@@ -55,7 +57,7 @@ const Communicate = () => {
                         </div>
                     </Col>
 
-                    <Col md={8} >
+                    <Col md={8} data-aos="fade-left">
                         <img src={Boy} alt="Boy" className="fix-size"/>
                     </Col>
                    

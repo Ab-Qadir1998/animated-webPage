@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import Btns from './Btn'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const Contact = () => {
+    useEffect(()=> {
+        Aos.init({duration: 1000});
+    });
     return (
         <div className="contact">
             <Container>
                 <Row className="justify-content-md-center">
                 <Col md={7}>
-                    <Form className="form">
+                    <Form className="form" data-aos="fade-up">
                         <Row>
                             <Col className="form-col">
                             <Form.Label>First Name</Form.Label>
