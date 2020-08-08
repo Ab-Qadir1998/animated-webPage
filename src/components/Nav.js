@@ -2,6 +2,7 @@ import React from 'react'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Navbar, Nav, Container} from 'react-bootstrap'
+import '../App.css'
 
 const Navigation = () => {
     return (
@@ -14,7 +15,7 @@ const Navigation = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#testimonials">Testimonials</Nav.Link>
+            <Nav.Link href="#testimonial">Testimonials</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
            
           </Nav>

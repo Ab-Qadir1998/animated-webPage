@@ -9,7 +9,7 @@ const About = () => {
         Aos.init({duration: 1000});
     });
     return (
-        <div className="about">
+        <div className="about" id="about">
             <Container>
                 <h1 className="text-center">About Us</h1>
                 <Row>

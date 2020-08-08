@@ -10,7 +10,7 @@ const Testimonial = () => {
         Aos.init({duration: 1000});
     });
     return (
-        <div className="testimonial" data-aos="fade-up">
+        <div className="testimonial" data-aos="fade-up" id="testimonial">
             <Container>
                 <h1 className="text-center">Testimonials</h1>
                 <OwlCarousel mt={4}

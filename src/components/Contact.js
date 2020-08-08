@@ -8,7 +8,7 @@ const Contact = () => {
         Aos.init({duration: 1000});
     });
     return (
-        <div className="contact">
+        <div className="contact" id="contact">
             <Container>
                 <Row className="justify-content-md-center">
                 <Col md={7}>
